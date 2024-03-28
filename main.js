@@ -109,7 +109,7 @@ tick();
 document.body.onscroll = handlerScroll;
 function handlerScroll() {
   const t = document.body.getBoundingClientRect().top;
-  console.log(t * 1);
+  // console.log(t * 1);
   trex.position.y = trexPositionY - (t * 0.001);
   ipad.position.y = ipadPositionY - (t * 0.001);
   meteor.position.x = Math.cos(t * 0.005)
